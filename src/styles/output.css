@@ -24,6 +24,7 @@ html {
 body {
   line-height: inherit;
   margin: 0;
+  background-color: #0c4b54;
 }
 hr {
   border-top-width: 1px;
@@ -7564,15 +7565,16 @@ input:checked + .toggle-bg {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 .navbg {
-  background-color: #fff;
+  border: 2px solid #0c4b54;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
+  color: white;
 }
 .navbg:hover {
-  background-color: #f5f7f8;
+  border: 2px solid #247459;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
@@ -7585,12 +7587,19 @@ input:checked + .toggle-bg {
     margin-top: 200px;
   }
   .paraf {
-    color: #379777 !important;
+    color: #e8f549 !important;
     font-family: "Noto Serif", serif;
     font-style: italic;
   }
   .aight1 {
     font-family: "Noto Serif", serif;
+    line-height: 4.5rem;
+    color: white;
+  }
+  .bento-grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
   }
 }
 @media (max-width: 1025px) {
@@ -7598,12 +7607,19 @@ input:checked + .toggle-bg {
     margin-top: 100px;
   }
   .paraf {
-    color: #379777 !important;
+    color: #e8f549 !important;
     font-family: "Noto Serif", serif;
     font-style: italic;
   }
   .aight1 {
     font-family: "Noto Serif", serif;
+    line-height: 3rem;
+    color: white;
+  }
+  .bento-grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
   }
 }
 .noto-serif {
@@ -7614,7 +7630,49 @@ input:checked + .toggle-bg {
   font-variation-settings: "wdth" 100;
 }
 .plus {
-  background-color: #f5f7f8;
+  background-color: #e8f549;
   padding: 5px;
   border-radius: 500px;
+}
+.bahasa {
+  color: white;
+  border: 1px solid #f5f7f82d;
+  border-radius: 10px;
+}
+.navTops {
+  border-bottom: 2px solid #f5f7f82d;
+}
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.bento-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bento-grid-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.bento-grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.bento-grid-item .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  color: white;
 }
