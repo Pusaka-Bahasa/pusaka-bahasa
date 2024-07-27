@@ -13,56 +13,56 @@ export default function SectionOne() {
         <div className="container mx-auto p-4">
           <div className="slider">
             <div className="gap-3 slider-track" id="sliderTrack1">
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="item1 semuaBahasa px-10 py-4">
                 <p>Jawa</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="item2 semuaBahasa px-10 py-4">
                 <p>Aceh</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="item3 semuaBahasa px-10 py-4">
                 <p>Sunda</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="item4 semuaBahasa px-10 py-4">
                 <p>Madura</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="item5 semuaBahasa px-10 py-4">
                 <p>Bali</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="item6 semuaBahasa px-10 py-4">
                 <p>Melayu</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="item7 semuaBahasa px-10 py-4">
                 <p>Sentani</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="item1 semuaBahasa px-10 py-4">
                 <p>Awban</p>
               </div>
             </div>
           </div>
           <div className="slider mt-4">
             <div className="gap-3 slider-track-reverse" id="sliderTrack2">
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="itemRight semuaBahasa px-10 py-4">
                 <p>Jawa</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="itemRight semuaBahasa px-10 py-4">
                 <p>Aceh</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="itemRight semuaBahasa px-10 py-4">
                 <p>Sunda</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="itemRight semuaBahasa px-10 py-4">
                 <p>Madura</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="itemRight semuaBahasa px-10 py-4">
                 <p>Bali</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="itemRight semuaBahasa px-10 py-4">
                 <p>Melayu</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="itemRight semuaBahasa px-10 py-4">
                 <p>Sentani</p>
               </div>
-              <div className="item semuaBahasa px-10 py-4">
+              <div className="itemRight semuaBahasa px-10 py-4">
                 <p>Awban</p>
               </div>
             </div>
