@@ -10,60 +10,118 @@ export default function SectionOne() {
         <p className="mb-8 mt-8 lg:text-md sm:text-sm font-medium text-gray-500 sm:px-16 lg:px-48 ">
           Setiap langkah membawa kamu lebih dekat pada pemahaman mendalam tentang warisan budaya kita. Pilih bahasa yang ingin kamu pelajari dan mulailah petualangan bahasa kamu sekarang !
         </p>
-        <div className="container mx-auto p-4">
-          <div className="slider">
-            <div className="gap-3 slider-track" id="sliderTrack1">
-              <div className="item1 semuaBahasa px-10 py-4">
-                <p>Jawa</p>
-              </div>
-              <div className="item2 semuaBahasa px-10 py-4">
-                <p>Aceh</p>
-              </div>
-              <div className="item3 semuaBahasa px-10 py-4">
-                <p>Sunda</p>
-              </div>
-              <div className="item4 semuaBahasa px-10 py-4">
-                <p>Madura</p>
-              </div>
-              <div className="item5 semuaBahasa px-10 py-4">
-                <p>Bali</p>
-              </div>
-              <div className="item6 semuaBahasa px-10 py-4">
-                <p>Melayu</p>
-              </div>
-              <div className="item7 semuaBahasa px-10 py-4">
-                <p>Sentani</p>
-              </div>
-              <div className="item1 semuaBahasa px-10 py-4">
-                <p>Awban</p>
+        <div className="wrapper-left">
+          <div className="itemLeft item1">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Aceh</h3>
               </div>
             </div>
           </div>
-          <div className="slider mt-4">
-            <div className="gap-3 slider-track-reverse" id="sliderTrack2">
-              <div className="itemRight semuaBahasa px-10 py-4">
-                <p>Jawa</p>
+          <div className="itemLeft item2">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Jawa</h3>
               </div>
-              <div className="itemRight semuaBahasa px-10 py-4">
-                <p>Aceh</p>
+            </div>
+          </div>
+          <div className="itemLeft item3">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Sunda</h3>
               </div>
-              <div className="itemRight semuaBahasa px-10 py-4">
-                <p>Sunda</p>
+            </div>
+          </div>
+          <div className="itemLeft item4">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Bajo</h3>
               </div>
-              <div className="itemRight semuaBahasa px-10 py-4">
-                <p>Madura</p>
+            </div>
+          </div>
+          <div className="itemLeft item5">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Bali</h3>
               </div>
-              <div className="itemRight semuaBahasa px-10 py-4">
-                <p>Bali</p>
+            </div>
+          </div>
+          <div className="itemLeft item6">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Sasak</h3>
               </div>
-              <div className="itemRight semuaBahasa px-10 py-4">
-                <p>Melayu</p>
+            </div>
+          </div>
+          <div className="itemLeft item7">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Papua</h3>
               </div>
-              <div className="itemRight semuaBahasa px-10 py-4">
-                <p>Sentani</p>
+            </div>
+          </div>
+          <div className="itemLeft item8">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Biak</h3>
               </div>
-              <div className="itemRight semuaBahasa px-10 py-4">
-                <p>Awban</p>
+            </div>
+          </div>
+        </div>
+        <div className="wrapper-right">
+          <div className="itemRight item1">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Aceh</h3>
+              </div>
+            </div>
+          </div>
+          <div className="itemRight item2">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Jawa</h3>
+              </div>
+            </div>
+          </div>
+          <div className="itemRight item3">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Sunda</h3>
+              </div>
+            </div>
+          </div>
+          <div className="itemRight item4">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Bajo</h3>
+              </div>
+            </div>
+          </div>
+          <div className="itemRight item5">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Bali</h3>
+              </div>
+            </div>
+          </div>
+          <div className="itemRight item6">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Sasak</h3>
+              </div>
+            </div>
+          </div>
+          <div className="itemRight item7">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Papua</h3>
+              </div>
+            </div>
+          </div>
+          <div className="itemRight item8">
+            <div className="bg-prim p-6 flex items-center justify-center text-center">
+              <div className="text-center">
+                <h3 className="font-2xl font-semibold text-[--card-foreground]">Bahasa Biak</h3>
               </div>
             </div>
           </div>

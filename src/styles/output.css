@@ -7599,6 +7599,15 @@ input:checked + .toggle-bg {
   .pilihanBahasa {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
+  .itemLeft {
+    left: max(calc(100px * 8), 100%);
+    animation-name: scrollLeft;
+  }
+
+  .itemRight {
+    right: max(calc(100px * 8), calc(100%));
+    animation-name: scrollRight;
+  }
 }
 @media (max-width: 1025px) {
   .headerNih {
@@ -7616,6 +7625,15 @@ input:checked + .toggle-bg {
   }
   .pilihanBahasa {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .itemLeft {
+    left: max(calc(150px * 8), 100%);
+    animation-name: scrollLeft;
+  }
+
+  .itemRight {
+    right: max(calc(150px * 8), calc(100%));
+    animation-name: scrollRight;
   }
 }
 .noto-serif {
@@ -7693,49 +7711,51 @@ input:checked + .toggle-bg {
   font-family: "Noto Serif", serif;
   font-style: italic;
 }
-.slider {
-  display: flex;
-  overflow: hidden;
-  position: relative;
+.wrapper-left {
+  margin-top: 2rem;
   width: 100%;
-  height: 60px; /* Adjust height as needed */
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
+}
+.wrapper-right {
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 100px;
+  position: relative;
   overflow: hidden;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
 }
 
-.slider-track {
-  display: flex;
-  animation: scroll;
+@keyframes scrollLeft {
+  to {
+    left: -100px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -100px;
+  }
+}
+
+.itemLeft,
+.itemRight {
+  width: 150px;
+  height: 72px;
+  background-color: #e8f549;
+  border-radius: 500px;
+  position: absolute;
   animation-timing-function: linear;
-  animation-duration: 20s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
 }
 
-.slider-track-reverse {
-  display: flex;
-  animation: scroll-reverse;
-  animation-timing-function: linear;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-reverse {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
 .item1 {
   animation-delay: calc(30s / 8 * (8 - 1) * -1);
 }
@@ -7766,6 +7786,12 @@ input:checked + .toggle-bg {
 
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.bg-prim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .semuaBahasa {
   max-width: 9rem;
