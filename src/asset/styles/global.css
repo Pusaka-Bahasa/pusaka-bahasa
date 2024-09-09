@@ -17,9 +17,44 @@
 }
 body {
   background-color: #faf8f4;
+  overflow: hidden;
+  margin: 0;
 }
 .navbarOriginal {
   margin-top: 200px;
+}
+.scrolling-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scrolling-content {
+  display: flex;
+  align-items: center;
+}
+
+.scrolling-content img {
+  margin: 0 20px;
+}
+
+.blur-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.blur-left {
+  left: 0;
+}
+
+.blur-right {
+  right: 0;
 }
 .positionAtas {
   text-align: left;
