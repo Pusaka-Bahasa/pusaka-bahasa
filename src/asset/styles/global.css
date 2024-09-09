@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "flowbite";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 
 /*! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com*/
 *,
@@ -16,6 +17,29 @@
 }
 body {
   background-color: #faf8f4;
+}
+.navbarOriginal {
+  margin-top: 200px;
+}
+.positionAtas {
+  text-align: center;
+}
+@media (max-width: 756px) {
+  .navbarOriginal {
+    margin-top: 120px;
+    padding: 10px;
+  }
+  .positionAtas {
+    text-align: left;
+  }
+}
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-serif {
+  font-family: "DM Serif Display", serif;
 }
 :host,
 html {
