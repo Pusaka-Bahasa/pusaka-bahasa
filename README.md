@@ -25,8 +25,20 @@ If your README is very long, add a table of contents to make it easy for users t
 
 ## Installation
 
-```
+```bash
 git clone https://github.com/Pusaka-Bahasa/pusaka-bahasa.git
+```
+
+```bash
+cd pusaka-bahasa
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
 ```
 
 ## Usage
