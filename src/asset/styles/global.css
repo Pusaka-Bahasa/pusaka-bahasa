@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "flowbite";
 
 /*! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com*/
 *,
@@ -12,6 +13,9 @@
 :after,
 :before {
   --tw-content: "";
+}
+body {
+  background-color: #faf8f4;
 }
 :host,
 html {
@@ -3484,6 +3488,10 @@ input:checked + .toggle-bg {
 .bg-second {
   background-color: #ff9d01;
 }
+.hover\:bg-second:hover {
+  background: #d38405;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
