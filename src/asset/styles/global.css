@@ -22,7 +22,7 @@ body {
   margin-top: 200px;
 }
 .positionAtas {
-  text-align: center;
+  text-align: left;
 }
 @media (max-width: 756px) {
   .navbarOriginal {
@@ -3509,8 +3509,14 @@ input:checked + .toggle-bg {
 .bg-primary {
   background-color: #2e7b73;
 }
+.text-primary {
+  color: #2e7b73;
+}
 .bg-second {
   background-color: #ff9d01;
+}
+.text-second {
+  color: #d38405;
 }
 .hover\:bg-second:hover {
   background: #d38405;
