@@ -9,12 +9,11 @@ const Carousel = () => {
     let animationId;
 
     const scrollCarousel = () => {
-      // Scroll secara horizontal ke kanan
       carousel.scrollLeft += 1;
 
       // Jika scroll mencapai item terakhir (lebih dari setengah), reset scroll ke awal
       if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
-        carousel.scrollLeft = 0; // Reset ke awal secara halus
+        carousel.scrollLeft = 0;
       }
 
       animationId = requestAnimationFrame(scrollCarousel);
@@ -44,7 +43,7 @@ const Carousel = () => {
 
   return (
     <div className="bg-background py-8 overflow-hidden">
-      <h2 className="text-muted-foreground font-bold mb-10 lg:text-xl text-sm text-primary text-center">Dipercaya oleh tim paling inovatif di Indonesia</h2>
+      <h2 className="text-muted-foreground font-bold mb-10 lg:text-xl text-md text-primary text-center">Dipercaya oleh tim paling inovatif di Indonesia</h2>
       <div className="mx-auto text-center carousel-width">
         <div className="carousel-track flex space-x-8 justify-center gap-4 overflow-hidden relative" ref={carouselRef}>
           {duplicatedItems.map((item, index) => (
