@@ -1,34 +1,36 @@
-<div id="sticky-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex justify-between w-full pb-5 pt-5 border-b border-gray-200 bg-primary dark:bg-gray-700 dark:border-gray-600">
-    <div class="flex">
-        <p class="flex" style="margin-left: 30px;">
-            <div class="grid text-center gap-1">
-                <span class="text-3xl font-bold text-white">Promo EA Diskon s.d. 40%, TERBATAS !</span>
-                <div class="flex items-center justify-left gap-4">
-                    <span class="text-lg font-bold text-white">
-                        Berakhir 10 hari lagi !
-                    </span>
-                    <div class="flex gap-2">
-                        <div class="countdown-box">
-                            <div id="days" class="text-lg font-bold">00</div>
-                        </div>
-                        <span class="text-lg font-bold text-white">:</span>
-                        <div class="countdown-box">
-                            <div id="hours" class="text-lg font-bold">00</div>
-                        </div>
-                        <span class="text-lg font-bold text-white">:</span>
-                        <div class="countdown-box">
-                            <div id="minutes" class="text-lg font-bold">00</div>
-                        </div>
-                        <span class="text-lg font-bold text-white">:</span>
-                        <div class="countdown-box">
-                            <div id="seconds" class="text-lg font-bold">00</div>
-                        </div>
+<div id="sticky-banner" tabindex="-1" class="fixed justify-between top-0 start-0 z-50 flex w-full border-b border-gray-200 bg-primary dark:bg-gray-700 dark:border-gray-600">
+    <div class="flex p-4" style="margin-left: 30px;">
+        <div class="grid text-center gap-1">
+            <span class="lg:text-2xl font-bold text-white text-xl">PROMO EA Diskon s.d. 40%, TERBATAS !</span>
+            <div class="flex items-center lg:gap-4 gap-2">
+                <span class="lg:text-lg text-sm font-bold text-white">
+                    Berakhir 10 hari lagi !
+                </span>
+                <div class="flex gap-2">
+                    <div class="countdown-box">
+                        <div id="days" class="lg:text-lg text-sm font-bold">00</div>
+                    </div>
+                    <span class="lg:text-lg text-sm font-bold text-white">:</span>
+                    <div class="countdown-box">
+                        <div id="hours" class="lg:text-lg text-sm font-bold">00</div>
+                    </div>
+                    <span class="lg:text-lg text-sm font-bold text-white">:</span>
+                    <div class="countdown-box">
+                        <div id="minutes" class="lg:text-lg text-sm font-bold">00</div>
+                    </div>
+                    <span class="lg:text-lg text-sm font-bold text-white">:</span>
+                    <div class="countdown-box">
+                        <div id="seconds" class="lg:text-lg text-sm font-bold">00</div>
                     </div>
                 </div>
             </div>
-        </p>
+        </div>
+    </div>    
+    <div class="flex pt-6 pb-5">
+        <button type="button" style="margin-right: 30px;" class="px-5 text-base font-bold text-center text-white lg:block hidden bg-second rounded-full hover:bg-second">Klaim Promo</button>
     </div>
 </div>
+
 
 <script>
     // Set the date we're counting down to (10 days from now at 00:00)
