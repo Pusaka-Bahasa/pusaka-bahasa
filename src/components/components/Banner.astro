@@ -1,0 +1,70 @@
+<div id="sticky-banner" tabindex="-1" class="fixed top-0 start-0 z-50 flex justify-between w-full pb-3 pt-2 border-b border-gray-200 bg-primary dark:bg-gray-700 dark:border-gray-600">
+    <div class="flex items-start mx-auto">
+        <p class="flex items-center">
+            <!-- <span class="inline-flex p-1 me-3 bg-gray-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center flex-shrink-0">
+                <svg class="w-3 h-3 text-blue-500 dark:text-blue-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 19">
+                    <path d="M15 1.943v12.114a1 1 0 0 1-1.581.814L8 11V5l5.419-3.871A1 1 0 0 1 15 1.943ZM7 4H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2v5a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V4ZM4 17v-5h1v5H4ZM16 5.183v5.634a2.984 2.984 0 0 0 0-5.634Z"/>
+                </svg>
+                <span class="sr-only">Light bulb</span>
+            </span> -->
+            <div class="grid text-center gap-1">
+                <span class="text-3xl font-bold text-white mb-2">Promo EA Diskon s.d. 40%, TERBATAS !</span>
+                <div class="flex items-center justify-center gap-4">
+                    <span class="text-lg font-bold text-white">
+                        Berakhir 10 hari lagi !
+                    </span>
+                    <div class="flex gap-4">
+                        <div class="countdown-box">
+                            <div id="days" class="text-lg font-bold text-white">00</div>
+                        </div>
+                        <div class="countdown-box">
+                            <div id="hours" class="text-lg font-bold text-white">00</div>
+                        </div>
+                        <div class="countdown-box">
+                            <div id="minutes" class="text-lg font-bold text-white">00</div>
+                        </div>
+                        <div class="countdown-box">
+                            <div id="seconds" class="text-lg font-bold text-white">00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </p>
+    </div>
+</div>
+<script>
+    // Set the date we're counting down to (10 days from now at 00:00)
+    const countDownDate = new Date();
+    countDownDate.setDate(countDownDate.getDate() + 10);
+    countDownDate.setHours(0, 0, 0, 0); // Set to 00:00 of the 10th day
+
+    // Update the countdown every 1 second
+    const x = setInterval(function() {
+        // Get the current time
+        const now = new Date().getTime();
+        // Calculate the remaining time
+        const distance = countDownDate.getTime() - now;
+
+        // Time calculations
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const totalHours = Math.floor(distance / (1000 * 60 * 60));
+        const hours = totalHours % 24;
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Update the HTML content
+        document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+        document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+        document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+        
+        // If the countdown is over, display a message
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("days").innerHTML = "00";
+            document.getElementById("hours").innerHTML = "00";
+            document.getElementById("minutes").innerHTML = "00";
+            document.getElementById("seconds").innerHTML = "00";
+        }
+    }, 1000);
+</script>

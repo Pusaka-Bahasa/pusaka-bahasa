@@ -21,7 +21,7 @@ body {
   height: auto;
 }
 .navbarOriginal {
-  margin-top: 200px;
+  margin-top: 300px;
 }
 .positionAtas {
   text-align: left;
@@ -34,6 +34,17 @@ body {
   .positionAtas {
     text-align: left;
   }
+}
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  border-radius: 0.375rem; /* 6px */
+  padding: 2px 5px 2px 5px;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  color: #ffffff;
 }
 .carousel-track {
   display: flex;

@@ -6,6 +6,7 @@ import "../asset/styles/global.css";
 import "../asset/js/global.js";
 import Navbar from "../components/Navbar.astro"
 import Footer from "../components/Footer.astro";
+import Banner from "../components/components/Banner.astro";
 
 const { title } = Astro.props;
 ---
@@ -24,6 +25,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<Banner />
 		<Navbar />	
 		<main>
 			<slot />
