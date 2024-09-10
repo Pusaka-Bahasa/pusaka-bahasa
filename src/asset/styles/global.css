@@ -23,39 +23,6 @@ body {
 .navbarOriginal {
   margin-top: 200px;
 }
-.scrolling-container {
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
-
-.scrolling-content {
-  display: flex;
-  align-items: center;
-}
-
-.scrolling-content img {
-  margin: 0 20px;
-}
-
-.blur-bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 20px;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  z-index: 1;
-}
-
-.blur-left {
-  left: 0;
-}
-
-.blur-right {
-  right: 0;
-}
 .positionAtas {
   text-align: left;
 }
@@ -66,6 +33,20 @@ body {
   }
   .positionAtas {
     text-align: left;
+  }
+}
+.carousel-track {
+  animation: scroll 40s linear infinite;
+}
+.carousel-item {
+  flex-shrink: 0;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 8));
   }
 }
 .dm-serif-display-regular {
