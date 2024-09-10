@@ -17,8 +17,8 @@
 }
 body {
   background-color: #faf8f4;
-  overflow: hidden;
   margin: 0;
+  height: auto;
 }
 .navbarOriginal {
   margin-top: 200px;
@@ -36,11 +36,23 @@ body {
   }
 }
 .carousel-track {
-  animation: scroll 40s linear infinite;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
 }
+.carousel-width {
+  width: 1250px !important;
+}
+
 .carousel-item {
   flex-shrink: 0;
+  animation: scroll 40s linear infinite;
 }
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -49,6 +61,7 @@ body {
     transform: translateX(calc(-250px * 8));
   }
 }
+
 .dm-serif-display-regular {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
