@@ -44,7 +44,7 @@ const Carousel = () => {
 
   return (
     <div className="bg-background py-8 overflow-hidden">
-      <h2 className="text-muted-foreground font-bold mb-8 text-lg text-primary text-center">Dipercaya oleh tim paling inovatif di Indonesia</h2>
+      <h2 className="text-muted-foreground font-bold mb-10 lg:text-lg text-sm text-primary text-center">Dipercaya oleh tim paling inovatif di Indonesia</h2>
       <div className="mx-auto text-center carousel-width">
         <div className="carousel-track flex space-x-8 justify-center gap-4 overflow-hidden relative" ref={carouselRef}>
           {duplicatedItems.map((item, index) => (
