@@ -3561,6 +3561,9 @@ input:checked + .toggle-bg {
 .hover\:bg-second:hover {
   background: #d38405;
 }
+.hover\:bg-primary:hover {
+  background: #215a54;
+}
 
 .bg-white {
   --tw-bg-opacity: 1;
