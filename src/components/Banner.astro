@@ -1,9 +1,9 @@
 <div id="sticky-banner" tabindex="-1" class="fixed justify-between top-0 start-0 z-50 flex w-full border-b border-gray-200 bg-primary dark:bg-gray-700 dark:border-gray-600">
-    <div class="flex p-4" style="margin-left: 30px;">
-        <div class="grid text-center gap-1">
-            <span class="lg:text-2xl font-bold text-white text-xl">PROMO EA Diskon s.d. 40%, TERBATAS !</span>
+    <div class="flex p-4 lg:ml-6">
+        <div class="grid text-left gap-1">
+            <span class="lg:text-2xl font-bold text-white text-md">PROMO EA Diskon s.d. 40%, TERBATAS !</span>
             <div class="flex items-center lg:gap-4 gap-2">
-                <span class="lg:text-lg text-sm font-bold text-white">
+                <span class="lg:text-lg text-sm font-bold text-white hidden lg:block">
                     Berakhir 10 hari lagi !
                 </span>
                 <div class="flex gap-2">
@@ -26,9 +26,24 @@
             </div>
         </div>
     </div>    
-    <div class="flex pt-6 pb-5">
-        <button type="button" style="margin-right: 30px;" class="px-5 text-base font-bold text-center text-white lg:block hidden bg-second rounded-full hover:bg-second">Klaim Promo</button>
-    </div>
+    <div class="flex pt-6 pb-6 text-center">
+        <!--BUTTON DESKTOP -->
+        <button type="button" class="px-2 lg:px-5 mr-3 text-md font-medium text-center text-white bg-second rounded-full hover:bg-second items-center justify-center lg:block hidden">
+            <div class="flex items-center justify-center">
+                <p>Klaim Promo</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 lg:ml-0 text-center justify-center items-center flex-shrink-0" viewBox="0 0 320 512">
+                    <path fill="#fff" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+                </svg>
+            </div>
+        </button>        
+
+        <!--BUTTON MOBILE -->
+        <button class="relative flex mr-3 lg:hidden block items-center justify-center w-11 h-11 bg-second rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-black" viewBox="0 0 320 512">
+                <path fill="#fff" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+            </svg>
+        </button>            
+    </div>    
 </div>
 
 
