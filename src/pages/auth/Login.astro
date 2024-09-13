@@ -1,5 +1,29 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import Layout from "../../layouts/Auth.astro";
 ---
 
-<Layout title="Login">
+<Layout title="Pusaka Bahasa - Login"
+>
+<div class="flex h-screen">
+    <div class="flex-1 flex flex-col justify-center items-center bg-white p-8">
+      <h1 class="text-2xl font-bold text-blue-600">Welcome back!</h1>
+      <p class="text-zinc-600 mb-6">Start managing your clinic records faster and better</p>
+      <form class="w-full max-w-sm">
+        <label class="block mb-2 text-sm font-medium text-zinc-700" for="username">Username</label>
+        <input class="border border-zinc-300 rounded-lg p-2 w-full mb-4" type="email" id="username" placeholder="example@gmail.com" required />
+        <label class="block mb-2 text-sm font-medium text-zinc-700" for="password">Password</label>
+        <input class="border border-zinc-300 rounded-lg p-2 w-full mb-4" type="password" id="password" required />
+  
+        <div class="flex items-center mb-4">
+          <input type="checkbox" id="remember" class="mr-2" />
+          <label for="remember" class="text-sm text-zinc-600">Remember me</label>
+          <a href="#" class="ml-auto text-sm text-blue-600 hover:underline">Forgot password?</a>
+        </div>
+  
+        <button class="bg-blue-600 text-white p-2 rounded-lg w-full hover:bg-blue-500">Login</button>
+      </form>
+      <p class="mt-4 text-sm text-zinc-600">Don't have an account? <a href="#" class="text-blue-600 hover:underline">Signup</a></p>
+    </div>
+    <div class="flex-1 bg-login flex flex-col justify-center items-center text-white p-8 hidden lg:block">
+    </div>
+  </div>

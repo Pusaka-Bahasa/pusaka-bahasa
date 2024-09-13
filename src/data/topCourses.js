@@ -4,7 +4,7 @@ export const courses = [
     thumbnail: "/courseThumbnail/MengenalBahasaJawaDariDasarhinggaLancar.png",
     mentorImage: "/mentorPicture/mentor1.png",
     mentorName: "Rania Yamin",
-    price: "Rp. 50.000",
+    price: "Gratis",
     rating: 5,
   },
   {
@@ -12,15 +12,15 @@ export const courses = [
     thumbnail: "/courseThumbnail/BahasaMaduraBelajarBerbicarahinggaLancar.png",
     mentorImage: "/mentorPicture/mentor1.png",
     mentorName: "Bima Saputra",
-    price: "Rp. 50.000",
-    rating: 5,
+    price: "Gratis",
+    rating: 4,
   },
   {
     title: "Bahasa Sasak Lombok: Pemahaman Mudah",
     thumbnail: "/courseThumbnail/BahasaSasakLombokPemahamanMudah.png",
     mentorImage: "/mentorPicture/mentor1.png",
     mentorName: "Dian Kartika",
-    price: "Rp. 50.000",
+    price: "Gratis",
     rating: 5,
   },
   {
@@ -28,7 +28,7 @@ export const courses = [
     thumbnail: "/courseThumbnail/BahasaBaliPemahamanDasardanPengucapan.png",
     mentorImage: "/mentorPicture/mentor1.png",
     mentorName: "Sinta Maharani",
-    price: "Rp. 50.000",
-    rating: 5,
+    price: "Gratis",
+    rating: 4,
   },
 ];
