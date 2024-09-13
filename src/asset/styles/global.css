@@ -72,7 +72,12 @@ body {
     transform: translateX(calc(-250px * 8));
   }
 }
-
+.bg-budaya {
+  background-image: url("../../../public/banner/bannerBudaya.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .dm-serif-display-regular {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
